@@ -3,13 +3,13 @@ import './App.css';
 import Home from '../src/screens/Home';
 import Menu from './screens/Menu';
 import ForgotPassword from './screens/ForgotPassword';
-import Login from 'screen/Login';
-import Register from './screens/Register';
+import Search from './screens/Search';
+import Profile from './screens/Profile';
 
 function App() {
   return (
     <div>
-      <ForgotPassword/>
+      <Profile name='Maria Joaquina' bodyDesc='1,68m - 64kg'/>
       
     </div>
   );
