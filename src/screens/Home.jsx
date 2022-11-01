@@ -30,7 +30,7 @@ class Home extends Component {
         return (
             <div>
                 <Navbar/>
-                <SearchBar/>
+                <SearchBar text='Search ingredients...'/>
                 <div className='ingredients' style={styles.ingredients}>
                     <Ingredient/>
                     <Ingredient/>

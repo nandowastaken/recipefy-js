@@ -28,7 +28,7 @@ class SearchBar extends Component {
             <div>
                 <div className='searchBar' style={styles.searchBar}>
                     <div className='searchContent' style={styles.searchContent}>
-                        Search ingredients...
+                        {this.props.text}
                         <img src={search}></img>
                     </div>
                 </div>
