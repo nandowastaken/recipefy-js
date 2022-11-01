@@ -5,13 +5,16 @@ import Menu from './screens/Menu';
 import ForgotPassword from './screens/ForgotPassword';
 import Search from './screens/Search';
 import Profile from './screens/Profile';
+import Register from './screens/Register';
+import Login from './screens/Login';
 
 function App() {
   return (
     <div>
-      <Profile name='Maria Joaquina' bodyDesc='1,68m - 64kg'/>
-      
+      <Login/>
+
     </div>
+
   );
 }
 
