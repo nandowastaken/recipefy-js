@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import backarrow from '../assets/svg/backarrow.svg';
+import HeaderBack from '../components/HeaderBack';
 
 var styles = {
     header: {
@@ -20,11 +20,7 @@ class Menu extends Component {
     render() { 
         return (
             <div>
-                <div className='header' style={styles.header}>
-                    <img src={backarrow} style={styles.backArrow}></img>
-                    <h1>Recipefy</h1>
-                    <div></div>
-                </div>
+                <HeaderBack/>
 
                 <div className='settings' style={styles.settings}>
                     <div className='favorites' style={styles.favorites}>
