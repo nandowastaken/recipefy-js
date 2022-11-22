@@ -16,6 +16,10 @@ var styles = {
         justifyContent: 'center',
         alignItems: 'center',
     },
+
+    weightText: {
+        opacity: '0.8'
+    }
 }
 
 class Profile extends Component {
@@ -27,7 +31,7 @@ class Profile extends Component {
                 <div className='userProfile' style={styles.userProfile}>
                     <img src={women} style={ styles.profilePicture }></img>
                     <h3>{this.props.name}</h3>
-                    <p>{this.props.bodyDesc}</p>
+                    <p style={styles.weightText}>{this.props.bodyDesc}</p>
                 </div>
 
                 <div className='userInfo' style={styles.userInfo}>

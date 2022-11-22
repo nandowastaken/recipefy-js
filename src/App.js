@@ -9,7 +9,9 @@ import Profile from './screens/Profile';
 function App() {
   return (
     <div>
-      <Profile name='Maria Joaquina' bodyDesc='1,68m - 64kg'/>
+      <Home/>
+      
+      
       
     </div>
   );
