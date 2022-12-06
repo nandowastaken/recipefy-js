@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import backarrow from '../assets/svg/backarrow.svg';
+import { Link } from 'react-router-dom';
 
 var styles = {
     header: {
@@ -14,7 +15,7 @@ class HeaderBack extends Component {
     render() { 
         return (
             <div className='header' style={styles.header}>
-                <img src={backarrow} style={styles.backArrow}></img>
+                <Link to="/"><img src={backarrow} style={styles.backArrow}></img></Link>
                 <h1>Recipefy</h1>
                 <div></div>
             </div>

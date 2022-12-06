@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import search from '../assets/svg/search.svg';
+import { Link } from 'react-router-dom';
 
 var styles = {
     searchContainer: {
@@ -31,17 +32,13 @@ var styles = {
     }
 }
 
-function clickButton() {
-    alert("Clicked on the button...");
-}
-
 class FunctionalSearchBar extends Component {
     state = {  } 
     render() { 
         return (
             <div style={styles.searchContainer}>
                 <input type="text" placeholder={this.props.text} name="search" style={styles.searchBar}></input>
-                <button type='submit' style={styles.searchButton} onClick={clickButton}><img src={search}></img></button>
+                <button type='submit' style={styles.searchButton}><Link to="/search"><img src={search}></img></Link></button>
                 
             </div>
         );

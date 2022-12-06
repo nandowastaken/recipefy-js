@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import women from '../assets/imgs/women.jpg'
 import hamburger from '../assets/svg/hamburger.svg'
+import { Link } from 'react-router-dom';
 
 var styles = {
     navbar: {
@@ -31,9 +32,9 @@ class Navbar extends Component {
     render() { 
         return (
             <div style={styles.navbar}>
-                <img src={hamburger} style={styles.hamburger}></img>
+                <Link to="/menu"><img src={hamburger} style={styles.hamburger}></img></Link>
                 <h1 className='title' style={styles.title}>RECIPEFY</h1>
-                <img src={women} style={styles.profilePicture}></img>
+                <Link to="/profile"><img src={women} style={styles.profilePicture}></img></Link>
                 
             </div>
         );

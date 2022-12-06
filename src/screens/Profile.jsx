@@ -3,6 +3,7 @@ import HeaderBack from '../components/HeaderBack';
 import women from '../assets/imgs/women.jpg'
 import BoxInfo from '../components/BoxInfo';
 
+
 var styles = {
     profilePicture: {
         width: '250px',
