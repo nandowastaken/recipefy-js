@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import SearchBar from '../components/SearchBar';
 import Ingredient from '../components/Ingredient';
+import FunctionalSearchBar from '../components/FunctionalSearchBar';
 
 var styles = {
     homeContainer: {
@@ -19,13 +20,19 @@ var styles = {
     },
 
     recipes: {
-        height: '50vh',
+        height: '100vh',
         width: '100%',
         backgroundColor: '#F2E5E5',
     },
 
     innerRecipesContent: {
         margin: '12px',
+        
+    },
+
+    recipesTitle: {
+        textAlign: "center",
+        margin: "16px",
     }
 }
 
@@ -35,7 +42,8 @@ class Home extends Component {
         return (
             <div className='homeContainer'>
                 <Navbar/>
-                <SearchBar text='Search ingredients...'/>
+                <FunctionalSearchBar text="Search ingredients..."/>
+                
 
                 <div className='ingredients' style={styles.ingredients}>
                     <Ingredient/>
@@ -44,8 +52,8 @@ class Home extends Component {
 
                 <div className='recipes' style={styles.recipes}>
                     <div styles={styles.innerRecipesContent}>
-                        <h2>Recipes</h2>
-                        <SearchBar text='Search recipes...'/>
+                        <h2 style={styles.recipesTitle}>Recipes</h2>
+                        <FunctionalSearchBar text='Search recipes...' />
                     </div>
                     
                 </div>
