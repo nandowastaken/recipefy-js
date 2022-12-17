@@ -12,12 +12,12 @@ var styles = {
     },
 
     searchBar: {
-        border: '1px solid rgb(0, 0, 0, 0.2)',
+        border: '1px solid rgb(0, 0, 0, 0.1)',
         borderRadius: '12px',
         margin: '18px 30px',
         padding: '16px',
         opacity: 0.8,
-        boxShadow: '0px 0px 3px 3px rgb(0, 0, 0, 0.1)',
+        boxShadow: '0px 0px 3px 3px rgb(0, 0, 0, 0.05)',
         width: "90%",
         fontSize: "16px",
         fontFamily: "Inter, sans-serif",
@@ -27,7 +27,7 @@ var styles = {
         backgroundColor: "transparent",
         border: "none",
         position: "absolute",
-        margin: "0% 0px 0px 74%",
+        margin: "0% 0px 0px 69%",
         width: "10%",
     }
 }

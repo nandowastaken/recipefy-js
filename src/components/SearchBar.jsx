@@ -8,7 +8,7 @@ var styles = {
         margin: '18px 30px',
         padding: '16px',
         opacity: 0.8,
-        boxShadow: '0px 0px 3px 3px rgb(0, 0, 0, 0.1)',
+        boxShadow: '0px 0px 3px 3px rgb(0, 0, 0, 0.05)',
     },
 
     searchContent: {

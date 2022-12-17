@@ -25,29 +25,26 @@ class Menu extends Component {
                 <div className='settings' style={styles.settings}>
                     <div className='favorites' style={styles.favorites}>
                         <h3>Favorites</h3>
-                        <hr size='1' width='90%' color='black'></hr>
+                        <hr size='1' width='100%' color='black'></hr>
                     </div>
 
                     <div className='userSettings' style={styles.userSettings}>
                         <h2>User Settings</h2>
                         <div className='userSettingsOptions' style={styles.userSettingsOptions}>
                             <h3>Edit Profile</h3>
-                            <hr size='1' width='90%' color='black'></hr>
                             <h3>My Account</h3>
-                            <hr size='1' width='90%' color='black'></hr>
                             <h3>Disconnect</h3>
                         </div>
-                        <hr size='1' width='90%' color='black'></hr>
+                        <hr size='1' width='100%' color='black'></hr>
                     </div>
 
                     <div className='generalSettings' style={styles.generalSettings}>
                         <h2>General Settings</h2>
                         <div className='generalSettingsOptions' style={styles.generalSettingsOptions}>
                             <h3>Appearance</h3>
-                            <hr size='1' width='90%' color='black'></hr>
                             <h3>Language</h3>
                         </div>
-                        <hr size='1' width='90%' color='black'></hr>
+                        <hr size='1' width='100%' color='black'></hr>
                     </div>
                 </div>
                 
