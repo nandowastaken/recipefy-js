@@ -7,20 +7,23 @@ import FunctionalSearchBar from '../components/FunctionalSearchBar';
 var styles = {
     homeContainer: {
         width: '100vw',
-        height: '100vh'
+        height: '100vh',
+        overflow: 'hidden'
+    },
+ 
+    ingredientsConteiner: {
+        overflowX: 'scroll'
     },
 
     ingredients: {
-        width: 'auto',
         display: 'flex',
-        alignItems: 'center',
-        margin: '10px',
-        padding: '10px',
-
+        flexDirection: 'row',
+        width: '200%'
+        
     },
 
     recipes: {
-        height: '50vh',
+        height: '100vh',
         width: '100%',
         backgroundColor: '#F2E5E5',
     },
@@ -40,13 +43,14 @@ class Home extends Component {
     render() { 
         return (
             <div className='homeContainer'>
+
                 <Navbar/>
                 <FunctionalSearchBar text="Search ingredients..."/>
-                
 
-                <div className='ingredients' style={styles.ingredients}>
-                    <Ingredient/>
-                    
+                <div className="ingredientsConteiner"  style={styles.ingredientsConteiner}>
+                    <div className='ingredients' style={styles.ingredients}>
+                        {Array(4).fill(<Ingredient/>)}
+                    </div>
                 </div>
 
                 <div className='recipes' style={styles.recipes}>
@@ -54,7 +58,6 @@ class Home extends Component {
                         <h2 style={styles.recipesTitle}>Recipes</h2>
                         <FunctionalSearchBar text='Search recipes...' />
                     </div>
-                    
                 </div>
                 
             </div>
