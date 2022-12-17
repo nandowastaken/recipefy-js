@@ -6,16 +6,20 @@ var styles = {
         width: '45%',
         height: '25.8vh',
         backgroundColor: '#FDFFE2',
-        borderRadius: '14px',
+        borderRadius: '8px',
+        boxShadow: '0px 0px 2px 2px rgb(0, 0, 0, 0.045)',
     },
 
     ingredientImageContainer: {
-        width: '90%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         margin: '10px',
     },
 
     ingredientImage: {
         width: '100%',
+        borderRadius: '4px',
     },
 
     ingredientInfo: {
@@ -29,7 +33,7 @@ var styles = {
         alignItems: 'flex-start',
 
         margin: '0px 0px',
-        padding: '0px',
+        padding: '5px 0px',
         
     },
 
@@ -44,7 +48,7 @@ var styles = {
         margin: '0px 10px',
         padding: '0px 0px 0px 0px',
         color: 'rgb(0, 0, 0, 0.5)',
-        fontWeight: '700',
+        fontWeight: '600',
     }
 }
 

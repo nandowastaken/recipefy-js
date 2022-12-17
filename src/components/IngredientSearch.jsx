@@ -14,12 +14,18 @@ var styles = {
     },
 
     textContent: {
+        lineHeight: '10px',
+        margin: '10px',
+    },
 
+    ingredientResume: {
+        color: 'rgb(0, 0, 0, 0.5)',
+        fontWeight: '600',
     },
 
     addIngredient: {
         backgroundColor: '#CDE9C1',
-        width: '20%',
+        width: '21%',
         height: '70px',
         display: 'flex',
         justifyContent: 'center',
@@ -39,7 +45,7 @@ class IngredientSearch extends Component {
             <div style={styles.box}>
                 <div className='textContent' style={styles.textContent}>
                     <h3>{this.props.name}</h3>
-                    <p>{this.props.description}</p>
+                    <p style={styles.ingredientResume}>{this.props.description}</p>
                 </div>
 
                 <div className='addIngredient' style={styles.addIngredient}>

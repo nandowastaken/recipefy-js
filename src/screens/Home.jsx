@@ -20,19 +20,18 @@ var styles = {
     },
 
     recipes: {
-        height: '100vh',
+        height: '50vh',
         width: '100%',
         backgroundColor: '#F2E5E5',
     },
 
-    innerRecipesContent: {
-        margin: '12px',
+    innerRecipesContent: {   
         
     },
 
     recipesTitle: {
-        textAlign: "center",
-        margin: "16px",
+        margin: '20px 20px 10px 10px',
+        fontWeight: '550',
     }
 }
 
