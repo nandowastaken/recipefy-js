@@ -6,12 +6,13 @@ import FunctionalSearchBar from '../components/FunctionalSearchBar';
 
 var styles = {
     homeContainer: {
+        overflowX: 'hidden',
         width: '100vw',
         height: '100vh'
     },
 
     ingredients: {
-        width: '100%',
+        width: 'auto',
         display: 'flex',
         alignItems: 'center',
         margin: '10px',

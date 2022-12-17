@@ -9,6 +9,7 @@ var styles = {
         alignItems: 'center',
         justifyContent: 'space-between',
         height: '70px',
+        overflowY: 'hidden',
         
     },
 
