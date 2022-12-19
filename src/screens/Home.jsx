@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
-import SearchBar from '../components/SearchBar';
 import Ingredient from '../components/Ingredient';
 import FunctionalSearchBar from '../components/FunctionalSearchBar';
 
@@ -18,7 +17,7 @@ var styles = {
     ingredients: {
         display: 'flex',
         flexDirection: 'row',
-        width: '200%'
+        width: '170%'
         
     },
 

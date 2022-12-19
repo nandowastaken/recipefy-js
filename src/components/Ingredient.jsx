@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 var styles = {
     ingredient: {
         width: '120px',
-        height: '180px',
+        height: '170px',
         backgroundColor: '#FDFFE2',
         borderRadius: '8px',
         boxShadow: '0px 0px 2px 2px rgb(0, 0, 0, 0.045)',
@@ -53,6 +53,7 @@ var styles = {
         color: 'rgb(0, 0, 0, 0.5)',
         fontWeight: '600',
     },
+
 }
 
 class Ingredient extends Component {
@@ -60,7 +61,7 @@ class Ingredient extends Component {
     render() { 
         return (
                 <div style={styles.ingredient}>
-                    <Link to="/nutritional_facts">
+                    <Link to="/nutritional_facts" style={{textDecoration: 'none', color: 'rgba(0,0,0,0.7)'}}>
                         <div style={styles.ingredientImageContainer}>
                             <img src={bread} alt="Bread" style={styles.ingredientImage}/>
                         </div>
