@@ -14,8 +14,7 @@ var styles = {
     },
     backArrow: {
         width: '25px',
-        position: 'fixed',
-        bottom: '94.2%',
+        position: 'absolute',
         left: '8%'
     }
 }
