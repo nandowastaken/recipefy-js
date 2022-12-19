@@ -23,7 +23,7 @@ class NutritionalFacts extends Component {
                 <HeaderBack/>
                 <NutritionalHeader/>
                 <NutritionalConteiner topicName={pinkTopicCategory} size={pinkTopicCategory.length} color='#FFE2F5' />
-                <NutritionalConteiner topicName={yellowTopicCategory} size={yellowTopicCategory.length}  color='#FDFFE2'/>
+                <NutritionalConteiner topicName={yellowTopicCategory}  size={yellowTopicCategory.length}  color='#FDFFE2'/>
                 <NutritionalConteiner topicName={blueTopicCategory} size={blueTopicCategory.length}  color='#E2EEFF'/>
                 <br/>
                 <hr size='5' color='black'style={{backgroundColor: 'black'}}/>

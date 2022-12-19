@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+const styles = {
+    topicLine: {
+        display: 'flex',
+        justifyContent: 'space-between'
+    }
+}
+
 class NutritionalConteiner extends Component {
     state = { }
     render() {
@@ -8,7 +15,13 @@ class NutritionalConteiner extends Component {
                 { [...Array(this.props.size)].map((_, index) => 
                     <div key={index}>
                         <hr size='2' color='black'/>
-                        <span>{this.props.topicName[index]}</span>
+                        <div style={styles.topicLine}>
+                            <span>
+                                {this.props.topicName[index]}
+                                <span>...g</span>
+                            </span>
+                            <span>...%</span>
+                        </div>
                     </div>)
                 }
                 <hr size='2' color='black'/>
