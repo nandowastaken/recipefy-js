@@ -6,7 +6,16 @@ var styles = {
     header: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between'
+
+    },
+    title: {
+        fontSize: '25px'
+    },
+    backArrow: {
+        width: '25px',
+        position: 'absolute',
+        left: '8%'
     }
 }
 
@@ -15,8 +24,8 @@ class HeaderBack extends Component {
     render() { 
         return (
             <div className='header' style={styles.header}>
-                <Link to="/"><img src={backarrow} style={styles.backArrow}></img></Link>
-                <h1>Recipefy</h1>
+                <Link to="/"><img src={backarrow} style={styles.backArrow} alt="arrow"></img></Link>
+                <h1 style={styles.title}>Recipefy</h1>
                 <div></div>
             </div>
         );
