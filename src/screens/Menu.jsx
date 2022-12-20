@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderBack from '../components/HeaderBack';
+import { Link } from 'react-router-dom';
 
 var styles = {
     header: {
@@ -32,6 +33,7 @@ class Menu extends Component {
                         <h2>User Settings</h2>
                         <div className='userSettingsOptions' style={styles.userSettingsOptions}>
                             <h3>Edit Profile</h3>
+                            <Link to='/premium'><h3>Get Premium</h3></Link>
                             <h3>My Account</h3>
                             <h3>Disconnect</h3>
                         </div>
