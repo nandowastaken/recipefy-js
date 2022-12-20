@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "example@gmail.com",
+      "username": "example",
+      "name": "Example Jr.",
+      "password": "1234"
+    },
+    {
+      "name": "Fernando Jorge",
+      "email": "fernandojorge.cavalcantegomes@gmail.com",
+      "password": "19234",
+      "id": "4bK7uS5"
+    },
+    {
+      "name": "Normando",
+      "email": "norman@gmail.com",
+      "password": "1234",
+      "id": "SyROSGi"
+    },
+    {
+      "name": "Eliel",
+      "email": "eliel@gmail.com",
+      "password": "19234",
+      "id": "PGKJjO5"
+    }
+  ]
+}
