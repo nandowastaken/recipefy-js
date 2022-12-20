@@ -8,6 +8,7 @@ import ForgotPassword from './screens/ForgotPassword';
 import Search from './screens/Search';
 import Profile from './screens/Profile';
 import NutritionalFacts from './screens/NutritionalFacts';
+import Premium from './screens/Premium';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/menu" element={<Menu/>}/>
           <Route path='/nutritional_facts' element={<NutritionalFacts/>}/>
+          <Route path='/premium' element={<Premium/>}/>
 
           <Route path="/forgotPassword" element={<ForgotPassword/>}/>
         </Routes>
