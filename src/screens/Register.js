@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeaderBack from "../components/HeaderBack";
+import { Navigate } from "react-router-dom";
 import InputBox from "../components/InputBox";
 import Button from "../components/Button";
 import { Toast } from "bootstrap";
@@ -32,6 +33,7 @@ export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loggedIn, setLoggedIn] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,11 +52,40 @@ export default function Register() {
       });
   };
 
+  const handleRegister = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch(`${process.env.API}/users`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        nome,
+        senha,
+        email,
+        username,
+        password,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      localStorage.setItem("token", data.token);
+      setLoggedIn(true);
+    } else {
+      alert("Alguma coisa deu errado.");
+    }
+  };
+
+  if (loggedIn) {
+    return <Navigate to="/" />;
+  }
+
   return (
     <div>
       <HeaderBack />
 
-      <form style={styles.content} onSubmit={handleSubmit}>
+      <form style={styles.content} onSubmit={handleRegister}>
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}

@@ -36,6 +36,10 @@ export default function Login() {
     }
   };
 
+  if (loggedIn) {
+    return <Navigate to="/" />;
+  }
+
   return (
     <div>
       <HeaderBack />
