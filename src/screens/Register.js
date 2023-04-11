@@ -39,7 +39,7 @@ export default function Register() {
     e.preventDefault();
     let regojb = { name, username, email, password };
 
-    fetch(`${process.env.API}/users`, {
+    fetch("http://localhost:3000/users", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(regojb),
@@ -55,7 +55,7 @@ export default function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`${process.env.API}/users`, {
+    const response = await fetch("http://localhost:8080/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

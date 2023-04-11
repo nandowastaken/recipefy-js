@@ -40,7 +40,7 @@ export default function Home() {
     const token = localStorage.getItem("token");
 
     if (token) {
-      const response = await fetch(`${process.env.API}/welcome`, {
+      const response = await fetch("http://localhost:8080/welcome", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
